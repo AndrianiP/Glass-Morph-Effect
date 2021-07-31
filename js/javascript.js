@@ -1,7 +1,7 @@
 
 var currentChromaVal= 1;
 var skinDisplay = new Image();
-
+//Fixed Issue
 function changeColor(currentChromaVal) {
     var newSkinSRC = "./imgs/"+currentChromaVal+ ".png";
     console.log(newSkinSRC);
