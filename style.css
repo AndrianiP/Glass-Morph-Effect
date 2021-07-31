@@ -1,0 +1,263 @@
+*{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:16px;
+    font-weight:bolder;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./imgs/background.png);
+}
+
+#circleOne {
+    content: '';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #b584c2;
+    clip-path: circle(65% at 100% -10%);
+}
+
+section {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 50px 10px;
+    box-sizing: border-box;
+}
+
+section::before{
+    
+}
+
+#circleTwo {
+    content: '';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: #8485c2;
+    clip-path: circle(65% at 0% 110%);
+}
+section::after {
+
+}
+
+.container {
+    position:relative;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+
+}
+
+.container .card {
+    position: relative;
+    background:#e4e4e436;
+    border-radius: 1em;
+    padding: 4em 1em;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    margin: 20px 40px;
+    flex-direction: column;
+}
+
+.container .card .imgBox {
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    padding:20px;
+    transition: 500ms ease-in-out;
+
+}
+
+.container .card:hover .imgBox {
+    transform: scale(1.2) translateY(-100px);
+}
+
+
+.container .card .imgBox img {
+    max-width: 100%;
+    margin: 0 0 20px;
+}
+
+
+.container .card .imgBox h2 {
+    font-size:1.25em;
+    color:white;
+
+}
+
+.container .card .content {
+    position:absolute;
+    bottom:40px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    transition: 500ms ease-in-out;
+}
+
+.container .card .content .chroma {
+    display:flex;
+    justify-content:left;
+    align-items:left;
+    transition: 500ms ease-in-out;
+}
+
+.container .card:hover .content .chroma {
+    transform: translateY(-90px);
+}
+
+.container .card .content .chroma h3{
+    color:white;
+    font-weight:400;
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+
+.container .card .content .chroma span {
+    content:'';
+    width: 26px;
+    height:auto;
+    align-items: center;
+    line-height:24px;
+    display:inline-block;
+    transition: 200ms ease-in-out;
+
+}
+
+.base {
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(153, 170, 202) 50%,rgb(134, 95, 156) 50%);
+
+}
+
+.base:hover {
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.amethyst {
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(46, 10, 70) 50%,rgb(204, 89, 185) 50%);
+}
+
+.amethyst:hover {
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.aquamarine {
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(154, 195, 206) 50%,rgb(88, 91, 235) 50%);
+}
+
+.aquamarine:hover{
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.obsidian {
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(13, 5, 32) 50%,rgb(105, 8, 30) 50%);
+}
+
+.obsidian:hover {
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.pearl {
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(197, 210, 228) 50%,rgb(231, 222, 95) 50%);
+}
+
+.pearl:hover {
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.peridot {
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(218, 217, 168) 50%,rgb(30, 92, 28) 50%);
+}
+
+.peridot:hover {
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.ruby{
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(255, 0, 13) 50%,rgb(112, 189, 157) 50%);
+}
+
+.ruby:hover {
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.turquoise {
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(5, 71, 73) 50%,rgb(52, 185, 179) 50%);
+}
+
+.turquoise:hover {
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.skin {
+    justify-content:center;
+    align-items: center;
+    display:flex;
+    transition: 500ms ease-in-out;
+
+}
+
+.container .card .content .skin h2 {
+    position: absolute;
+    top: 40px;
+    color:#00000000;
+    padding: 5px 15px;
+    visibility: visible;
+    transition: 450ms ease-in;
+}
+
+.container .card:hover .content .skin h2{
+    transition: 500ms ease-in-out;
+    color:black;
+    border-radius: 8em;
+    
+    top: -35px;
+    background: white;
+    visibility: visible;
+}
+
+.container .card:hover .content .skin h2:hover{
+    transform:scale(1.2);
+
+}
