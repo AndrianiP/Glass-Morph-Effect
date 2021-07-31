@@ -3,7 +3,7 @@ var currentChromaVal= 1;
 var skinDisplay = new Image();
 
 function changeColor(currentChromaVal) {
-    var newSkinSRC = "Glass-Morph-Effect/imgs/"+currentChromaVal+ ".png";
+    var newSkinSRC = "./imgs/"+currentChromaVal+ ".png";
     console.log(newSkinSRC);
     document.getElementById('skinDisplay').src = newSkinSRC;
     changeCircleColor(currentChromaVal);
