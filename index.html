@@ -7,12 +7,13 @@
 </head>
 
 <body>
+    <span id='blur'></span>
     <span id="circleOne"></span>
     <section>
-        <div class="container">
-            <div class="card">
+        <div class="container" id='container'>
+            <div class="card" id="card">
                 <div class="imgBox">
-                    <img id="skinDisplay" src="./imgs/1.png" alt="Diana Lunar Blossom Skin">
+                    <img id="skinDisplay" src="./imgs/Lunar/1.png" alt="Diana Lunar Blossom Skin">
                     <h2>Lunar Blossom Diana</h2>
                 </div>
                 <div class="content">
@@ -28,11 +29,61 @@
                         <span class="turquoise" onclick="changeColor(8)" ></span>
                     </div>
                     <div class="skin">
-                        <h2>Change Skin</h2>
+                        <h2 onclick="displaySkins()">Change Skin</h2>
                     </div>
                 </div>
             </div>
-        </div>
+            <!--Second Card-->
+            <SecondCard class="rightCard" id="rightCard">
+                <div class="card" id="card">
+                    <div class="imgBox">
+                        <img id="skinDisplay" src="./imgs/Lunar/1.png" alt="Diana Lunar Blossom Skin">
+                        <h2>Lunar Blossom Diana</h2>
+                    </div>
+                    <div class="content">
+                        <div class="chroma">
+                            <h3>Chroma :</h3> 
+                            <span class="base" onclick="changeColor(1)" ></span>
+                            <span class="amethyst" onclick="changeColor(2)" ></span>
+                            <span class="aquamarine" onclick="changeColor(3)" ></span>
+                            <span class="obsidian" onclick="changeColor(4)" ></span>
+                            <span class="pearl" onclick="changeColor(5)" ></span>
+                            <span class="peridot" onclick="changeColor(6)" ></span>
+                            <span class="ruby" onclick="changeColor(7)" ></span>
+                            <span class="turquoise" onclick="changeColor(8)" ></span>
+                        </div>
+                        <div class="skin">
+                            <h2 onclick="displaySkins()">Change Skin</h2>
+                        </div>
+                    </div>
+                </div>
+            </SecondCard>
+            <!--Third Card-->
+            <CenterCard class="centerCard" id="centerCard">
+                <div class="card" id="card">
+                    <div class="imgBox">
+                        <img id="skinDisplay" src="./imgs/Lunar/1.png" alt="Diana Lunar Blossom Skin">
+                        <h2>Lunar Blossom Diana</h2>
+                    </div>
+                    <div class="content">
+                        <div class="chroma">
+                            <h3>Chroma :</h3> 
+                            <span class="base" onclick="changeColor(1)" ></span>
+                            <span class="amethyst" onclick="changeColor(2)" ></span>
+                            <span class="aquamarine" onclick="changeColor(3)" ></span>
+                            <span class="obsidian" onclick="changeColor(4)" ></span>
+                            <span class="pearl" onclick="changeColor(5)" ></span>
+                            <span class="peridot" onclick="changeColor(6)" ></span>
+                            <span class="ruby" onclick="changeColor(7)" ></span>
+                            <span class="turquoise" onclick="changeColor(8)" ></span>
+                        </div>
+                        <div class="skin">
+                            <h2 onclick="displaySkins()">Change Skin</h2>
+                        </div>
+                    </div>
+                </div>
+            </CenterCard>
     </section>
+    
     <span id="circleTwo"></span>
 </body>

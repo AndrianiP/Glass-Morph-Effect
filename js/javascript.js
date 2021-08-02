@@ -3,12 +3,14 @@ var currentChromaVal= 1;
 var skinDisplay = new Image();
 //Fixed Issue
 function changeColor(currentChromaVal) {
-    var newSkinSRC = "./imgs/"+currentChromaVal+ ".png";
+    var newSkinSRC = "./imgs/Lunar/"+currentChromaVal+ ".png";
     console.log(newSkinSRC);
     document.getElementById('skinDisplay').src = newSkinSRC;
     changeCircleColor(currentChromaVal);
     
 }
+
+
 
 function changeCircleColor(currentChromaVal) {
     
@@ -48,3 +50,43 @@ function changeCircleColor(currentChromaVal) {
         circleTwo.style.background = 'rgb(52, 185, 179)';
     }
 }
+
+function displaySkins(){
+    var blur = document.getElementById('blur').style;
+    blur.visibility='visible'; 
+    blur.zIndex ='1';
+    
+    
+    var card = document.getElementById('card').style;
+    card.transition= '600ms ease-in-out';
+    card.transform ='translateX(-175%)'
+    card.zIndex = '110';
+    card.pointerEvents = 'none';
+
+    var newCard = document.getElementById('rightCard');
+    newCard.style.opacity = '1';
+    newCard.style.visibility='visible';
+    newCard.firstElementChild.style.zIndex = '120';
+    newCard.firstElementChild.style.opacity = '1';
+    newCard.firstElementChild.style.visibility='visible';
+    newCard.firstElementChild.style.transform ='translateX(175%) scale(1.0)';
+    newCard.firstElementChild.style.transition = '800ms ease-in-out';
+    newCard.firstElementChild.style.pointerEvents = 'none';
+
+    var centerCard = document.getElementById('centerCard');
+    centerCard.style.opacity = '1';
+    centerCard.style.visibility='visible';
+    centerCard.firstElementChild.style.zIndex = '120';
+    centerCard.firstElementChild.style.opacity = '1';
+    centerCard.firstElementChild.style.visibility='visible';
+    centerCard.firstElementChild.style.transform ='translateY(-80px) scale(1.0)';
+    centerCard.firstElementChild.style.transition = '900ms ease-in-out';
+    centerCard.firstElementChild.style.pointerEvents = 'none';
+    setTimeout(function(){
+        card.pointerEvents = 'all';
+        centerCard.firstElementChild.style.pointerEvents = 'all';
+        newCard.firstElementChild.style.pointerEvents = 'all';
+    }, 800);
+
+}
+

@@ -11,6 +11,17 @@ body{
     background-image: url(./imgs/background.png);
 }
 
+#blur {
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index: 100;
+    background:rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    visibility: hidden;
+    pointer-events: none;
+}
+
 #circleOne {
     content: '';
     position:fixed;
@@ -32,9 +43,6 @@ section {
     box-sizing: border-box;
 }
 
-section::before{
-    
-}
 
 #circleTwo {
     content: '';
@@ -46,9 +54,7 @@ section::before{
     background: #8485c2;
     clip-path: circle(65% at 0% 110%);
 }
-section::after {
 
-}
 
 .container {
     position:relative;
@@ -259,5 +265,37 @@ section::after {
 
 .container .card:hover .content .skin h2:hover{
     transform:scale(1.2);
-
+    
 }
+
+.rightCard {
+    position: absolute;
+    z-index: 120;
+    visibility: inherit;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.rightCard .card {
+    transform: scale(0.85);
+    pointer-events: none;
+    visibility: inherit;
+    opacity: 0.0;
+}
+
+.centerCard {
+    position: absolute;
+    z-index: 120;
+    visibility: inherit;
+    pointer-events: none;
+    opacity: 0.0;
+}
+
+.centerCard .card {
+    top: 80px;
+    transform: scale(0.7);
+    pointer-events: none;
+    visibility: inherit;
+    opacity: 0.0;
+}
+
