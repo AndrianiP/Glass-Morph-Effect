@@ -86,7 +86,7 @@ function displaySkins(){
         card.pointerEvents = 'all';
         centerCard.firstElementChild.style.pointerEvents = 'all';
         newCard.firstElementChild.style.pointerEvents = 'all';
-    }, 800);
+    }, 500);
 
 }
 
