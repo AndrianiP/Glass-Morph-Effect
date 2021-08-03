@@ -26,7 +26,7 @@ body{
     width:100%;
     height:100%;
     z-index: 100;
-    background:rgba(0, 0, 0, 0.3);
+    background:rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
     visibility: hidden;
     pointer-events: none;
@@ -40,7 +40,8 @@ body{
     width:100%;
     height:100%;
     background: #b584c2;
-    clip-path: circle(65% at 100% -10%);
+    clip-path: circle(50% at 100% -10%);
+    transition: 700ms ease-in-out;
 }
 
 section {
@@ -63,7 +64,8 @@ section {
     width:100%;
     height: 100%;
     background: #8485c2;
-    clip-path: circle(65% at 0% 110%);
+    clip-path: circle(50% at 0% 110%);
+    transition: 700ms ease-in-out;
 }
 
 
