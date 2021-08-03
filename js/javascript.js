@@ -52,18 +52,15 @@ function changeCircleColor(currentChromaVal) {
 
 function displaySkins(){
     cardAnimations();
-    
+
 }
 
 function changeMassText(className, text) {
     var elements = document.querySelectorAll(className);
-    console.log(elements.length);
     var i = 0, length = elements.length;
     for( ; i < length; i++){
-        console.log(elements[i].getAttribute('id'));
         if(elements[i].getAttribute('id') != null){
             elements[i].innerHTML= text;
-            console.log(elements[i].innerHTML);
             elements[i].style.pointerEvents = 'fill';
         }
     }
