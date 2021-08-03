@@ -160,7 +160,7 @@ section {
 
 .base {
     clip-path: circle();
-    background: linear-gradient(to right, rgb(153, 170, 202) 50%,rgb(134, 95, 156) 50%);
+    background: linear-gradient(to right, rgb(153, 170, 202) 50%,#b584c2 50%);
 
 }
 
@@ -169,6 +169,103 @@ section {
     margin-left:8px;
     margin-right:8px;
 }
+
+.baseDarkWater {
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(105, 52, 129) 50%,rgb(104, 78, 86) 50%);
+
+}
+
+.baseDarkWater:hover {
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.baseDragon {
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(138, 52, 141) 50%,rgb(194, 201, 218) 50%);
+
+}
+
+.baseDragon:hover {
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.citrineDragon {
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(255, 229, 80) 50%,rgb(255, 173, 22) 50%);
+
+}
+
+.citrineDragon:hover {
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.emeraldDragon {
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(116, 212, 37) 50%,rgb(255, 211, 89) 50%);
+
+}
+
+.emeraldDragon:hover {
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.obsidianDragon {
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(60, 103, 151) 50%,rgb(37, 194, 214) 50%);
+
+}
+
+.obsidianDragon:hover {
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.pearlDragon {
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(223, 223, 223) 38%,rgb(157, 188, 245) 38%, rgb(126, 50, 161)63%, rgb(252, 225, 77)63%);
+
+}
+
+.pearlDragon:hover {
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.rubyDragon {
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(226, 5, 5) 50%,rgb(235, 200, 48) 50%);
+
+}
+
+.rubyDragon:hover {
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.sapphireDragon {
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(26, 190, 255) 50%,rgb(43, 99, 255) 50%);
+
+}
+
+.sapphireDragon:hover {
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
 
 .amethyst {
     clip-path: circle();
@@ -214,6 +311,17 @@ section {
     margin-right:8px;
 }
 
+.pearlDarkWater {
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(197, 210, 228) 50%,rgb(155, 151, 76) 50%);
+}
+
+.pearlDarkWater:hover {
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
 .peridot {
     clip-path: circle();
     background: linear-gradient(to right, rgb(218, 217, 168) 50%,rgb(30, 92, 28) 50%);
@@ -231,6 +339,28 @@ section {
 }
 
 .ruby:hover {
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.rubyDarkWater{
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(255, 0, 13) 50%,rgb(255, 190, 12) 50%);
+}
+
+.rubyDarkWater:hover{
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.sapphire {
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(72, 136, 255) 50%,rgb(228, 214, 88) 50%);
+}
+
+.sapphire:hover {
     transform: scale(2);
     margin-left:8px;
     margin-right:8px;

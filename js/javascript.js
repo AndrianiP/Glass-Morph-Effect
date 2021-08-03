@@ -2,16 +2,30 @@
 var currentChromaVal= 1;
 var skinDisplay = new Image();
 //Fixed Issue
-function changeColor(currentChromaVal) {
+function changeColorLunar(currentChromaVal) {
+    console.log(document.getElementById('skinDisplay').getAttribute('alt'));
     var newSkinSRC = "./imgs/Lunar/"+currentChromaVal+ ".png";
     document.getElementById('skinDisplay').src = newSkinSRC;
-    changeCircleColor(currentChromaVal);
+    changeCircleColorLunar(currentChromaVal);
 
 }
 
+function changeColorDragon(currentChromaVal) {
+    console.log(document.getElementById('skinDisplayDragon').getAttribute('alt'));
+    var newSkinSRC = "./imgs/Dragon/d"+currentChromaVal+".png";
+    document.getElementById('skinDisplayDragon').src = newSkinSRC;
+    changeCircleColorDragon(currentChromaVal);
+}
+
+function changeColorDarkWater(currentChromaVal){
+    console.log(document.getElementById('skinDisplayDragon').getAttribute('alt'));
+    var newSkinSRC = "./imgs/DarkWater/dw"+currentChromaVal+".png";
+    document.getElementById('skinDisplayDarkWater').src = newSkinSRC;
+    changeCircleColorDragon(currentChromaVal);
+}
 
 
-function changeCircleColor(currentChromaVal) {
+function changeCircleColorLunar(currentChromaVal) {
     
     const circleOne = document.getElementById('circleOne');
     const circleTwo = document.getElementById('circleTwo');
@@ -48,6 +62,10 @@ function changeCircleColor(currentChromaVal) {
         circleOne.style.background = 'rgb(5, 71, 73)' ;
         circleTwo.style.background = 'rgb(52, 185, 179)';
     }
+}
+
+function changeCircleColorDragon(currentChromaVal){
+
 }
 
 function displaySkins(){
