@@ -21,7 +21,7 @@ function changeColorDarkWater(currentChromaVal){
     console.log(document.getElementById('skinDisplayDragon').getAttribute('alt'));
     var newSkinSRC = "./imgs/DarkWater/dw"+currentChromaVal+".png";
     document.getElementById('skinDisplayDarkWater').src = newSkinSRC;
-    changeCircleColorDragon(currentChromaVal);
+    changeCircleColorDarkWater(currentChromaVal);
 }
 
 
@@ -65,7 +65,67 @@ function changeCircleColorLunar(currentChromaVal) {
 }
 
 function changeCircleColorDragon(currentChromaVal){
+    const circleOne = document.getElementById('circleOne');
+    const circleTwo = document.getElementById('circleTwo');
 
+    if(currentChromaVal == 1){
+        circleOne.style.background = 'rgb(138, 52, 141)';
+        circleTwo.style.background = 'rgb(194, 201, 218)' ;
+    }
+    else if(currentChromaVal == 2) {
+        circleOne.style.background = 'rgb(255, 229, 80)';
+        circleTwo.style.background = 'rgb(255, 173, 22)';
+    }
+    else if(currentChromaVal == 3) {
+        circleOne.style.background = 'rgb(116, 212, 37)' ;
+        circleTwo.style.background = 'rgb(255, 211, 89)';
+    }
+    else if(currentChromaVal == 4) {
+        circleOne.style.background = 'rgb(60, 103, 151)';
+        circleTwo.style.background = 'rgb(37, 194, 214)';
+    }
+    else if(currentChromaVal == 5) {
+        circleOne.style.background = 'rgb(197, 210, 228)';
+        circleTwo.style.background = 'rgb(231, 222, 95)';
+    }
+    else if(currentChromaVal == 6) {
+        circleOne.style.background = 'rgb(226, 5, 5)' ;
+        circleTwo.style.background = 'rgb(235, 200, 48)' ;
+    }
+    else if(currentChromaVal == 7) {
+        circleOne.style.background = 'rgb(26, 190, 255)' ;
+        circleTwo.style.background = 'rgb(43, 99, 255)';
+    }
+}
+
+function changeCircleColorDarkWater(currentChromaVal){
+    const circleOne = document.getElementById('circleOne');
+    const circleTwo = document.getElementById('circleTwo');
+
+    if(currentChromaVal == 1){
+        circleOne.style.background = 'rgb(105, 52, 129)';
+        circleTwo.style.background = 'rgb(104, 78, 86)' ;
+    }
+    else if(currentChromaVal == 2) {
+        circleOne.style.background = 'rgb(13, 5, 32)';
+        circleTwo.style.background = 'rgb(105, 8, 30)';
+    }
+    else if(currentChromaVal == 3) {
+        circleOne.style.background = 'rgb(197, 210, 228)' ;
+        circleTwo.style.background = 'rgb(155, 151, 76)';
+    }
+    else if(currentChromaVal == 4) {
+        circleOne.style.background = 'rgb(255, 0, 13)';
+        circleTwo.style.background = 'rgb(255, 190, 12)';
+    }
+    else if(currentChromaVal == 5) {
+        circleOne.style.background = 'rgb(72, 136, 255)';
+        circleTwo.style.background = 'rgb(228, 214, 88)';
+    }
+    else if(currentChromaVal == 6) {
+        circleOne.style.background = 'rgb(39, 60, 71)' ;
+        circleTwo.style.background = 'rgb(52, 185, 179)' ;
+    }
 }
 
 function displaySkins(){

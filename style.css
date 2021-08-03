@@ -355,12 +355,23 @@ section {
     margin-right:8px;
 }
 
-.sapphire {
+.sapphireDarkWater {
     clip-path: circle();
     background: linear-gradient(to right, rgb(72, 136, 255) 50%,rgb(228, 214, 88) 50%);
 }
 
-.sapphire:hover {
+.sapphireDarkWater:hover {
+    transform: scale(2);
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.turquoiseDarkWater {
+    clip-path: circle();
+    background: linear-gradient(to right, rgb(39, 60, 71) 50%,rgb(52, 185, 179) 50%);
+}
+
+.turquoiseDarkWater:hover {
     transform: scale(2);
     margin-left:8px;
     margin-right:8px;
